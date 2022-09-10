@@ -1,0 +1,24 @@
+"""
+Algoritmo que recebe uma lista de valores
+e retorna a soma e a média
+Autor: João Pedro Paulino Spinda
+Data: 02/09/2022 10:15
+"""
+
+#definição da função
+def soma(numero):
+    soma = sum(numero)
+    print(f'\nA soma é {soma}')
+
+def media(valores):
+    avg = sum(valores) / len(valores) #len serve para "contar" os valores, exemplo: joao, joao tem 4 letrar
+    print(f'A média é {avg}')
+
+#criação da lista
+lista = []
+
+for a in range(5):
+    lista.append(int(input('Digite um número: '))) #append serve para acrescentar coisas no vetor
+
+soma(lista)
+media(lista)
